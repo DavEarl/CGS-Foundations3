@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Unreal 5\\Repos\\CGS-Foundations3\\Tantrum\\Source\\Tantrum\\Tantrum.Build.cs",
+		"C:\\Unreal 5\\Repos\\CGS-Foundations3\\Tantrum\\Source\\Tantrum.Target.cs",
+		"C:\\Unreal 5\\Repos\\CGS-Foundations3\\Tantrum\\Source\\TantrumEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}

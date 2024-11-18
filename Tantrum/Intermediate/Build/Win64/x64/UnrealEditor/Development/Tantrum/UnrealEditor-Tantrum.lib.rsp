@@ -1,0 +1,19 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Tantrum.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\TantrumEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\Tantrum.init.gen.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\TantrumCharacterBase.gen.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\TantrumGameModeBase.gen.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\TantrumPlayerController.gen.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\Tantrum.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\TantrumCharacterBase.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\TantrumGameModeBase.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\TantrumPlayerController.cpp.obj"
+"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\Default.rc2.res"
+/OUT:"C:\Unreal 5\Repos\CGS-Foundations3\Tantrum\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tantrum\UnrealEditor-Tantrum.lib"

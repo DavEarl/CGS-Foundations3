@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal 5\\repos\\cgs-foundations3\\tantrum\\source\\tantrum\\tantrumgamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal 5\\repos\\cgs-foundations3\\tantrum\\intermediate\\build\\win64\\x64\\tantrumeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal 5\\repos\\cgs-foundations3\\tantrum\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tantrum\\definitions.tantrum.h",
+            "c:\\unreal 5\\repos\\cgs-foundations3\\tantrum\\source\\tantrum\\tantrumgamemodebase.h",
+            "c:\\unreal 5\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\unreal 5\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\unreal 5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\unreal 5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\unreal 5\\repos\\cgs-foundations3\\tantrum\\intermediate\\build\\win64\\unrealeditor\\inc\\tantrum\\uht\\tantrumgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

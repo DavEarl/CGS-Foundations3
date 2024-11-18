@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/StarterContent/Maps/Minimal_Default.umap",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/Tantrum/Maps/PlayGround.umap",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/Tantrum/Controllers/BP_TantrumPlayerController.uasset",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/Tantrum/Characters/BP_TantrumCharacterBase.uasset",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/Tantrum/GameModes/BP_TantrumGameModeBase.uasset",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/Tantrum/PlayGround.umap",
+				"C:/Unreal 5/Repos/CGS-3/Tantrum/Content/StarterContent/Maps/PlayGround.umap"
+			]
+		}
+	]
+}
