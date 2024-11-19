@@ -38,15 +38,32 @@ struct Z_Construct_UClass_ATantrumPlayerController_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[] = {
 		{ "Category", "Look" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Base lookup rate, in deg/sec\n" },
+#endif
 		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Base lookup rate, in deg/sec" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BaseLookRightRate_MetaData[] = {
 		{ "Category", "Look" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//base lookright rate, in deg/sec\n" },
+#endif
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "base lookright rate, in deg/sec" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintSpeed_MetaData[] = {
+		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "TantrumPlayerController.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_BaseLookRightRate;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprintSpeed;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -56,9 +73,11 @@ struct Z_Construct_UClass_ATantrumPlayerController_Statics
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATantrumPlayerController, BaseLookUpRate), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseLookUpRate_MetaData), NewProp_BaseLookUpRate_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookRightRate = { "BaseLookRightRate", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATantrumPlayerController, BaseLookRightRate), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseLookRightRate_MetaData), NewProp_BaseLookRightRate_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_SprintSpeed = { "SprintSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATantrumPlayerController, SprintSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintSpeed_MetaData), NewProp_SprintSpeed_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATantrumPlayerController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookRightRate,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_SprintSpeed,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ATantrumPlayerController_Statics::DependentSingletons[])() = {
@@ -102,10 +121,10 @@ ATantrumPlayerController::~ATantrumPlayerController() {}
 struct Z_CompiledInDeferFile_FID_Repos_CGS_Foundations3_Tantrum_Source_Tantrum_TantrumPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATantrumPlayerController, ATantrumPlayerController::StaticClass, TEXT("ATantrumPlayerController"), &Z_Registration_Info_UClass_ATantrumPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATantrumPlayerController), 859188838U) },
+		{ Z_Construct_UClass_ATantrumPlayerController, ATantrumPlayerController::StaticClass, TEXT("ATantrumPlayerController"), &Z_Registration_Info_UClass_ATantrumPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATantrumPlayerController), 4015268306U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Repos_CGS_Foundations3_Tantrum_Source_Tantrum_TantrumPlayerController_h_2951155149(TEXT("/Script/Tantrum"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Repos_CGS_Foundations3_Tantrum_Source_Tantrum_TantrumPlayerController_h_3113304890(TEXT("/Script/Tantrum"),
 	Z_CompiledInDeferFile_FID_Repos_CGS_Foundations3_Tantrum_Source_Tantrum_TantrumPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Repos_CGS_Foundations3_Tantrum_Source_Tantrum_TantrumPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

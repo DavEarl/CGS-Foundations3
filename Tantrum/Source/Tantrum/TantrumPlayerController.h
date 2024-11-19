@@ -16,16 +16,28 @@ class TANTRUM_API ATantrumPlayerController : public APlayerController
 
 	virtual void SetupInputComponent() override;
 
-	void OnJumpAction();
+	void RequestJump();
 	void RequestMoveForward(float AxisValue);
 	void RequestMoveRight(float AxisValue);
 	void RequestLookUp(float AxisValue);
 	void RequestLookRight(float AxisValue);
+	void RequestStopJump();
 
+	void RequestCrouchStart();
+	void RequestCrouchEnd();
+
+	void RequestSprintStart();
+	void RequestSprintEnd();
+
+	//Base lookup rate, in deg/sec
 	UPROPERTY(EditAnywhere, Category = "Look")
 	float BaseLookUpRate = 90.f;
 
+	//base lookright rate, in deg/sec
 	UPROPERTY(EditAnywhere, Category = "Look")
 	float BaseLookRightRate = 90.f;
 	
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float SprintSpeed = 1200.0f;
+
 };
