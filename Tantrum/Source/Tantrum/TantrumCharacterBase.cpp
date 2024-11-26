@@ -3,6 +3,9 @@
 
 #include "TantrumCharacterBase.h"
 
+#include "GameFramework/CharacterMovementComponent.h"
+#include "TantrumPlayerController.h"
+
 // Sets default values
 ATantrumCharacterBase::ATantrumCharacterBase()
 {
@@ -32,3 +35,26 @@ void ATantrumCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 }
 
+void ATantrumCharacterBase::Landed(const FHitResult& Hit)
+{
+	Super::Landed(Hit);
+
+	//custom landed code
+	ATantrumPlayerController* TantrumPlayerControler = GetController<ATantrumPlayerController>();
+	if (TantrumPlayerControler)
+	{
+		const float fallImpactSpeed = FMath::Abs(GetVelocity().Z);
+		if (fallImpactSpeed < MinImpactSpeed)
+		{
+			//do nothing, Very light fall
+			return;
+		}
+
+		const float DeltaImpact = MaxImpactSpeed - MinImpactSpeed;
+		const float FallRatio = FMath::Clamp((fallImpactSpeed - MinImpactSpeed) / DeltaImpact, 0.0f, 1.0f);
+		const bool bAffectSmall = FallRatio <= .05;
+		const bool bAffectLarge = FallRatio > .05;
+		TantrumPlayerControler->PlayDynamicForceFeedback(FallRatio, 0.5f, bAffectLarge, bAffectSmall, bAffectLarge, bAffectSmall);
+	}
+
+}
